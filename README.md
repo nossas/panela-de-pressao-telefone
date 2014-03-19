@@ -14,7 +14,7 @@ Serviço de pressão por telefone do Panela de Pressão.
  
 ## REST
 
-1. Uma aplicação chama por `/handle/:numeroalvo/:numeroorigem
+1. Uma aplicação chama por `POST /handle/:numeroalvo/:numeroorigem`
 2. O twilio faz a ligação do número que voce configurou (`TWILIO NUMBER`) para o `NUMEROORIGEM` (usuário. etc).
 3. O `NUMEROORIGEM` atende e em seguida a api faz a conexão com o `NUMEROALVO`.
 4. Quando a ligação termina (uma das partes desconecta), o serviço finaliza a chamada.
